@@ -3,8 +3,8 @@
     <div class="content">
       <img class="Logo" src="logo-light.svg" height="45px"/>
       <nav class="navItems">
-        <a href="" class="Item">Features</a>
-        <a href="" class="Item">About</a>
+        <a class="Item disabled">Features</a>
+        <a class="Item disabled">About</a>
         <a href="https://github.com/lamarkaz/octopeth" target="_blank" class="Item">Github</a>
       </nav>
       <div class="projectby">Project by <a class="lamarkaz" href="https://lamarkaz.com" target="_blank">LAMARKAZ</a></div>
@@ -60,7 +60,7 @@
   transform: translateY(-50%);
   color: rgba(255,255,255,.5);
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   letter-spacing: .5px;
 }
@@ -71,15 +71,18 @@ a.lamarkaz {
 a.Item {
   margin-right: 27px;
   color: white;
-  opacity: 0.5;
+  opacity: 0.7;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   letter-spacing: .5px;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 a.Item:hover {
-  opacity: 0.9;
+  opacity: 1;
+}
+a.disabled:hover {
+ opacity: 0.7;
 }
 </style>
 
